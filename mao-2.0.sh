@@ -28,6 +28,11 @@ sudo yum update -y
 sudo yum install -y git curl
 sudo yum install wget -y
 
+# Install Node.js using NodeSource repository
+
+curl -fsSL https://rpm.nodesource.com/setup_14.x | sudo bash -
+sudo yum install -y nodejs
+
 # Define version numbers
 
 NODE_VERSION=14.16.1
